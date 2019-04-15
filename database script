@@ -1,0 +1,23 @@
+CREATE TABLE [dbo].[Chapters] (
+    [Id]     UNIQUEIDENTIFIER DEFAULT (newid()) NOT NULL,
+    [Number] INT              NOT NULL,
+    [Title]  NVARCHAR (120)   NULL,
+    [Pages]  INT              NOT NULL,
+    CONSTRAINT [PK_Chapters] PRIMARY KEY CLUSTERED ([Id] ASC)
+);
+
+CREATE TABLE [dbo].[Customers] (
+    [id]              UNIQUEIDENTIFIER NOT NULL,
+    [gender]          CHAR (1)         NOT NULL,
+    [firstname]       NVARCHAR (50)    NOT NULL,
+    [lastname]        NVARCHAR (50)    NOT NULL,
+    [dob]             DATETIME         NOT NULL,
+    [email]           NVARCHAR (110)   NOT NULL,
+    [mainaddressid]   UNIQUEIDENTIFIER NULL,
+    [telephone]       NVARCHAR (50)    NOT NULL,
+    [fax]             NVARCHAR (50)    NOT NULL,
+    [password]        NVARCHAR (50)    NOT NULL,
+    [newsletteropted] BIT              NOT NULL,
+    CONSTRAINT [PK_Customers] PRIMARY KEY CLUSTERED ([id] ASC)
+);
+
