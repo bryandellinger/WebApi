@@ -1,0 +1,19 @@
+<tr>
+         <td>{{this.number}}</td>
+         <td>{{this.title}}</td>
+         <td>{{this.pages}}</td>
+         <td>
+             <button type="button" 
+                     class="btn btn-outline-dark btn-sm edit-btn"
+                     id = "{{this.id}}">
+                 <i class="fas fa-edit"></i> Edit
+              </button>
+                <button type="button" 
+                     class="btn btn-outline-danger btn-sm delete-btn"
+                     data-id-to-delete = "{{this.id}}"
+                     data-title = "{{this.title}}">
+                 <i class="fas fa-times"></i> Delete
+              </button>
+         </td>
+         <td></td>
+</tr>

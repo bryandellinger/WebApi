@@ -1,0 +1,14 @@
+ <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Number</th>
+      <th scope="col">Title</th>
+      <th scope="col">Pages</th>
+      <th scope="col">Edit </th>
+      <th> <button class="btn btn-sm  btn-secondary" id="add-btn"><i class="fas fa-plus"></i></button></th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each this}}{{> bookChapterRow}}{{/each}}
+  </tbody>
+</table>

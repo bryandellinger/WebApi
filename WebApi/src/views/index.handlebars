@@ -1,0 +1,28 @@
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand" href="#">Web Api</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+             <li class="nav-item">
+            <a class="nav-link" href="./swagger" target="_blank">Swagger Documentation</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0" id="userContainer">
+        </form>
+      </div>
+</nav>
+<div class="container mt-5 ">
+   <div class="row">
+       <div class="alert alert-secondary col-sm-12 mt-3 position-relative p-5" role="alert">
+            <h1 class="text-center">Web Api <i class="fas fa-spinner fa-pulse" id="spinner" style="display: none"></i></h1>
+        </div>
+   </div>
+   <div class="container container-context" id="loginContainer"></div>
+   <div class="container container-context" id="registerContainer" style="display: none;"></div>
+   <div class="container container-context" id="tableContainer" style="display: none;"></div>
+   <div class="container container-context" id="formContainer" style="display: none;"></div>
+   <div class="container container-context" id="deleteContainer" style="display: none;"></div>
+</div>
